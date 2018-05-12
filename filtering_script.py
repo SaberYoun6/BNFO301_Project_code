@@ -15,10 +15,12 @@ with open(inp, 'r') as data:
         if (line.startswith('>')):
             seq_id.append(line)  
         elif (re.search('0.0[0-4][0-9]*',line)):
-            e_val.append(line)
-            print(type(line))
+            neoin = re.search('[0-9]e-[0-9]*',line)
+            #neoin = re.match('[0-9]e-[0-9]*',line)
+            print(neoin)
+            print(type(neoin))
+            e_val.append(neoin)
+            #print(type(line))
             print(type(e_val))
             print(e_val)
-            print(line)
-            print(line)
-                
+           #print(line)
