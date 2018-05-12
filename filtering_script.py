@@ -2,12 +2,14 @@
 import re
 from scipy import stats
 import sys
+import pprint
 seq_id = []
 e_val = []
 protein_search=[]
 seq=[]
 inp=sys.argv[1]
 query=[]
+seq_val={}
 with open(inp, 'r') as data:
     for inc in data:
         line= inc.rstrip('\n')
@@ -43,6 +45,9 @@ with open(inp, 'r') as data:
             seq.append(line)
 
 
-print(query[0])
-print(seq_id[0:10])
-print(e_val[0:10])
+
+
+print(query)
+print((str(seq_id) + ':' + str(e_val)))
+
+
