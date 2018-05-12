@@ -1,0 +1,200 @@
+BLASTP 2.4.0+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for composition-based statistics: Alejandro A. Schaffer,
+L. Aravind, Thomas L. Madden, Sergei Shavirin, John L. Spouge, Yuri
+I. Wolf, Eugene V. Koonin, and Stephen F. Altschul (2001),
+"Improving the accuracy of PSI-BLAST protein database searches with
+composition-based statistics and other refinements", Nucleic Acids
+Res. 29:2994-3005.
+
+
+
+Database: sequence(6).txt
+           67,061 sequences; 17,051,949 total letters
+
+
+
+Query= lcl|NC_015283.1_prot_YP_004323131.1_1 [gene=gp59]
+[locus_tag=PRSM4_001] [db_xref=GeneID:10327840] [protein=loader of
+gp41 DNA helicase] [protein_id=YP_004323131.1] [location=1..576]
+[gbkey=CDS]
+
+Length=191
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+GU071097.1_prot_ADO98066.1_1  [gene=gp59] [locus_tag=SSSM5_001] [...  342     2e-121
+NC_015289.1_prot_YP_004324607.1_1  [gene=gp59] [locus_tag=SSSM5_0...  342     2e-121
+NC_015282.1_prot_YP_004322897.1_1  [gene=gp59] [locus_tag=SSM1_00...  334     1e-118
+GU071094.1_prot_ADO97344.1_1  [gene=gp59] [locus_tag=SSM1_001] [p...  334     1e-118
+GU071106.1_prot_ADO99551.1_1  [gene=gp59] [locus_tag=Syn19_001] [...  292     4e-102
+NC_015286.1_prot_YP_004323839.1_1  [gene=gp59] [locus_tag=Syn19_0...  292     4e-102
+KJ019040.1_prot_AIX17436.1_214  [locus_tag=Syn7803C61_214] [prote...  282     4e-98 
+KJ019133.1_prot_AIX39300.1_217  [locus_tag=Syn9311C4_217] [protei...  282     4e-98 
+KJ019154.1_prot_AIX44636.1_216  [locus_tag=Syn7803C28_216] [prote...  282     4e-98 
+NC_027130.1_prot_YP_009140784.1_216  [locus_tag=ABF04_gp216] [db_...  282     4e-98 
+KJ019041.1_prot_AIX17651.1_214  [locus_tag=Syn7803C66_214] [prote...  282     4e-98 
+KJ019043.1_prot_AIX18083.1_215  [locus_tag=Syn7803C68_215] [prote...  282     4e-98 
+KJ019044.1_prot_AIX18298.1_214  [locus_tag=Syn7803C69_214] [prote...  282     4e-98 
+KJ019049.1_prot_AIX19456.1_216  [locus_tag=Syn7803C76_216] [prote...  282     4e-98 
+KJ019051.1_prot_AIX19890.1_215  [locus_tag=Syn7803C78_215] [prote...  282     4e-98 
+KJ019060.1_prot_AIX22119.1_216  [locus_tag=Syn7803C91_216] [prote...  282     4e-98 
+KJ019061.1_prot_AIX22333.1_213  [locus_tag=Syn7803C92_213] [prote...  282     4e-98 
+KJ019104.1_prot_AIX32700.1_214  [locus_tag=Syn7803US49_214] [prot...  282     4e-98 
+KJ019109.1_prot_AIX33980.1_215  [locus_tag=Syn7803US54_215] [prot...  282     4e-98 
+KJ019110.1_prot_AIX34197.1_216  [locus_tag=Syn7803US56_216] [prot...  282     4e-98 
+KJ019132.1_prot_AIX39082.1_214  [locus_tag=Syn9311C1_214] [protei...  282     4e-98 
+KJ019134.1_prot_AIX39517.1_216  [locus_tag=Syn7803C100_216] [prot...  282     4e-98 
+KJ019161.1_prot_AIX46272.1_217  [locus_tag=Syn7803C36_217] [prote...  282     4e-98 
+KJ019042.1_prot_AIX17867.1_215  [locus_tag=Syn7803C67_215] [prote...  282     4e-98 
+KX349285.1_prot_AOO10155.1_1  [locus_tag=RW01021201_001] [protein...  277     5e-96 
+KX349286.1_prot_AOO10377.1_1  [locus_tag=RW03080701_001] [protein...  277     5e-96 
+KX349287.1_prot_AOO10595.1_1  [locus_tag=RW060613_001] [protein=D...  277     5e-96 
+KX349288.1_prot_AOO10816.1_1  [locus_tag=RW080711_001] [protein=D...  277     5e-96 
+KX349289.1_prot_AOO11038.1_1  [locus_tag=RW220300_001] [protein=D...  277     5e-96 
+KX349290.1_prot_AOO11262.1_1  [locus_tag=RW251112_001] [protein=D...  277     5e-96 
+HQ317385.1_prot_AFB15287.1_1  [locus_tag=SWSG_00074] [protein=gp5...  277     5e-96 
+JF974288.1_prot_AFB17503.1_1  [locus_tag=SXDG_00124] [protein=gp5...  277     5e-96 
+JF974289.1_prot_AFB17714.1_1  [locus_tag=SXEG_00132] [protein=gp5...  277     5e-96 
+NC_020486.1_prot_YP_007518097.1_1  [locus_tag=SXDG_00124] [db_xre...  277     5e-96 
+NC_021536.1_prot_YP_008126522.1_196  [locus_tag=SWYG_00199] [db_x...  273     2e-94 
+MH107246.1_prot_AWD90157.1_121  [protein=DNA helicase loader prot...  270     4e-93 
+KY945241.1_prot_ARW56957.1_76  [protein=DNA helicase loader prote...  270     4e-93 
+NC_026924.1_prot_YP_009133775.1_215  [locus_tag=AAJ62_gp215] [db_...  266     1e-91 
+KJ019071.1_prot_AIX24559.1_215  [locus_tag=Syn7803US105_215] [pro...  266     1e-91 
+KJ019027.1_prot_AIX14610.1_215  [locus_tag=Syn7803C43_215] [prote...  265     2e-91 
+KJ019063.1_prot_AIX22767.1_214  [locus_tag=Syn7803C97_214] [prote...  265     2e-91 
+KJ019064.1_prot_AIX22982.1_214  [locus_tag=Syn7803C98_214] [prote...  265     2e-91 
+KJ019128.1_prot_AIX38214.1_213  [locus_tag=Syn7803US88_213] [prot...  265     2e-91 
+KF156339.1_prot_AHB80849.1_214  [locus_tag=S-MbCM25_214] [protein...  265     2e-91 
+JN371768.1_prot_AFD02840.1_224  [protein=gp41 DNA helicase gp59 l...  265     2e-91 
+NC_019444.1_prot_YP_007001950.1_224  [locus_tag=F363_gp224] [db_x...  265     2e-91 
+KX349226.1_prot_AON97519.1_1  [locus_tag=Fa020709_001] [protein=D...  263     1e-90 
+KX349227.1_prot_AON97733.1_1  [locus_tag=Fa100709_001] [protein=D...  263     1e-90 
+KX349228.1_prot_AON97947.1_1  [locus_tag=Fa240709_001] [protein=D...  263     1e-90 
+KX349229.1_prot_AON98161.1_1  [locus_tag=LIS011010_001] [protein=...  263     1e-90 
+KX349230.1_prot_AON98376.1_1  [locus_tag=LIS021013_001] [protein=...  263     1e-90 
+KX349231.1_prot_AON98591.1_1  [locus_tag=LIS061010_001] [protein=...  263     1e-90 
+KX349232.1_prot_AON98807.1_1  [locus_tag=LIS091010_001] [protein=...  263     1e-90 
+KX349233.1_prot_AON99021.1_1  [locus_tag=LIS111010_001] [protein=...  263     1e-90 
+KX349234.1_prot_AON99235.1_1  [locus_tag=LIS121010_001] [protein=...  263     1e-90 
+KX349235.1_prot_AON99450.1_1  [locus_tag=LIS141013_001] [protein=...  263     1e-90 
+KX349236.1_prot_AON99664.1_1  [locus_tag=NJ_05_1013_001] [protein...  263     1e-90 
+KX349237.1_prot_AON99877.1_1  [locus_tag=Np010709_001] [protein=D...  263     1e-90 
+KX349238.1_prot_AOO00092.1_1  [locus_tag=Np011112_001] [protein=D...  263     1e-90 
+KX349239.1_prot_AOO00306.1_1  [locus_tag=Np030709_001] [protein=D...  263     1e-90 
+KX349240.1_prot_AOO00520.1_1  [locus_tag=Np031112_001] [protein=D...  263     1e-90 
+KX349241.1_prot_AOO00733.1_1  [locus_tag=Np041112_001] [protein=D...  263     1e-90 
+KX349242.1_prot_AOO00947.1_1  [locus_tag=Np060912_001] [protein=D...  263     1e-90 
+KX349243.1_prot_AOO01161.1_1  [locus_tag=Np111112_001] [protein=D...  263     1e-90 
+KX349244.1_prot_AOO01375.1_1  [locus_tag=Np120912_001] [protein=D...  263     1e-90 
+KX349245.1_prot_AOO01589.1_1  [locus_tag=Np140912_001] [protein=D...  263     1e-90 
+KX349246.1_prot_AOO01803.1_1  [locus_tag=Np150709_001] [protein=D...  263     1e-90 
+KX349247.1_prot_AOO02017.1_1  [locus_tag=Np151112_001] [protein=D...  263     1e-90 
+KX349248.1_prot_AOO02231.1_1  [locus_tag=Np191112_001] [protein=D...  263     1e-90 
+KX349249.1_prot_AOO02444.1_1  [locus_tag=Np200912_001] [protein=D...  263     1e-90 
+KX349250.1_prot_AOO02658.1_1  [locus_tag=Np231112_001] [protein=D...  263     1e-90 
+KX349251.1_prot_AOO02872.1_1  [locus_tag=Np241112_001] [protein=D...  263     1e-90 
+KX349252.1_prot_AOO03086.1_1  [locus_tag=Np311112_001] [protein=D...  263     1e-90 
+KX349253.1_prot_AOO03300.1_1  [locus_tag=Np330912_001] [protein=D...  263     1e-90 
+KX349254.1_prot_AOO03514.1_1  [locus_tag=Np361112_001] [protein=D...  263     1e-90 
+KX349255.1_prot_AOO03728.1_1  [locus_tag=RW010709_001] [protein=D...  263     1e-90 
+KX349256.1_prot_AOO03942.1_1  [locus_tag=RW020113_001] [protein=D...  263     1e-90 
+KX349257.1_prot_AOO04156.1_1  [locus_tag=RW020709_001] [protein=D...  263     1e-90 
+KX349258.1_prot_AOO04370.1_1  [locus_tag=RW030709_001] [protein=D...  263     1e-90 
+KX349259.1_prot_AOO04584.1_1  [locus_tag=RW081112_001] [protein=D...  263     1e-90 
+KX349260.1_prot_AOO04797.1_1  [locus_tag=RW110905_001] [protein=D...  263     1e-90 
+KX349261.1_prot_AOO05011.1_1  [locus_tag=RW120113_001] [protein=D...  263     1e-90 
+KX349262.1_prot_AOO05225.1_1  [locus_tag=RW120709_001] [protein=D...  263     1e-90 
+KX349263.1_prot_AOO05439.1_1  [locus_tag=RW141112_001] [protein=D...  263     1e-90 
+KX349264.1_prot_AOO05653.1_1  [locus_tag=RW160905_001] [protein=D...  263     1e-90 
+KX349265.1_prot_AOO05867.1_1  [locus_tag=RW170113_001] [protein=D...  263     1e-90 
+KX349266.1_prot_AOO06081.1_1  [locus_tag=RW260905_001] [protein=D...  263     1e-90 
+KX349267.1_prot_AOO06294.1_1  [locus_tag=RW291112_001] [protein=D...  263     1e-90 
+KX349268.1_prot_AOO06508.1_1  [locus_tag=RW300905_001] [protein=D...  263     1e-90 
+KX349269.1_prot_AOO06722.1_1  [locus_tag=RW340905_001] [protein=D...  263     1e-90 
+KX349270.1_prot_AOO06936.1_1  [locus_tag=RW401112_001] [protein=D...  263     1e-90 
+KX349271.1_prot_AOO07150.1_1  [locus_tag=Sn250709_001] [protein=D...  263     1e-90 
+KX349272.1_prot_AOO07364.1_1  [locus_tag=W1010709_001] [protein=D...  263     1e-90 
+KX349273.1_prot_AOO07578.1_1  [locus_tag=W1010910_001] [protein=D...  263     1e-90 
+KX349274.1_prot_AOO07793.1_1  [locus_tag=W1030709_001] [protein=D...  263     1e-90 
+KX349275.1_prot_AOO08009.1_1  [locus_tag=W1080709_001] [protein=D...  263     1e-90 
+KX349276.1_prot_AOO08224.1_1  [locus_tag=W1090709_001] [protein=D...  263     1e-90 
+KX349277.1_prot_AOO08438.1_1  [locus_tag=W1120909_001] [protein=D...  263     1e-90 
+KX349278.1_prot_AOO08653.1_1  [locus_tag=W1130709_001] [protein=D...  263     1e-90 
+KX349279.1_prot_AOO08868.1_1  [locus_tag=W1160709_001] [protein=D...  263     1e-90 
+KX349280.1_prot_AOO09082.1_1  [locus_tag=W2020709_001] [protein=D...  263     1e-90 
+KX349281.1_prot_AOO09297.1_1  [locus_tag=W2130910_001] [protein=D...  263     1e-90 
+KX349282.1_prot_AOO09511.1_1  [locus_tag=W2140910_001] [protein=D...  263     1e-90 
+KX349283.1_prot_AOO09725.1_1  [locus_tag=W2320910_001] [protein=D...  263     1e-90 
+KX349284.1_prot_AOO09940.1_1  [locus_tag=W2390910_001] [protein=D...  263     1e-90 
+HQ317290.1_prot_AGH06690.1_1  [locus_tag=SWRG_00204] [protein=hyp...  263     1e-90 
+HQ317291.1_prot_AGH06898.1_1  [locus_tag=SWUG_00199] [protein=hyp...  263     1e-90 
+HQ317292.1_prot_AGH07108.1_1  [locus_tag=SWTG_00187] [protein=hyp...  263     1e-90 
+NC_020859.1_prot_YP_007675467.1_1  [locus_tag=SWTG_00187] [db_xre...  263     1e-90 
+KU686203.1_prot_AOV60146.1_210  [locus_tag=P29A0810_210] [protein...  263     1e-90 
+HQ634178.1_prot_AGN33844.1_1  [locus_tag=SXCG_00080] [protein=hyp...  263     1e-90 
+NC_021530.1_prot_YP_008125537.1_1  [locus_tag=SXCG_00080] [db_xre...  263     1e-90 
+KU686207.1_prot_AOV61045.1_213  [locus_tag=C350210_214] [protein=...  263     2e-90 
+KU686208.1_prot_AOV61259.1_213  [locus_tag=N440310_213] [protein=...  263     2e-90 
+KU686209.1_prot_AOV61473.1_213  [locus_tag=T191209_213] [protein=...  263     2e-90 
+NC_031903.1_prot_YP_009321125.1_213  [locus_tag=BOW88_gp018] [db_...  263     2e-90 
+KJ019087.1_prot_AIX28135.1_206  [locus_tag=Syn7803US19_206] [prot...  257     4e-88 
+KJ019153.1_prot_AIX44419.1_207  [locus_tag=Syn7803C26_207] [prote...  257     4e-88 
+JN371769.1_prot_AFD03074.1_233  [protein=gp41 DNA helicase gp59 l...  256     8e-88 
+NC_019443.1_prot_YP_007001725.1_233  [locus_tag=F364_gp233] [db_x...  256     8e-88 
+DQ149023.2_prot_ABA46976.1_3  [protein=loader of T4 gp41 helicase...  256     1e-87 
+NC_008296.2_prot_YP_717674.1_3  [gene=59] [locus_tag=BSV9_gp2] [d...  256     1e-87 
+KJ019039.1_prot_AIX17221.1_205  [locus_tag=Syn7803C60_205] [prote...  256     1e-87 
+KJ019026.1_prot_AIX14394.1_209  [locus_tag=Syn7803C42_209] [prote...  255     3e-87 
+KJ019030.1_prot_AIX15257.1_208  [locus_tag=Syn7803C47_208] [prote...  255     3e-87 
+KJ019033.1_prot_AIX15904.1_207  [locus_tag=Syn7803C53_207] [prote...  255     3e-87 
+KJ019038.1_prot_AIX17015.1_208  [locus_tag=Syn7803C59_208] [prote...  255     3e-87 
+KJ019055.1_prot_AIX20888.1_208  [locus_tag=Syn7803C86_208] [prote...  255     3e-87 
+KJ019065.1_prot_AIX23189.1_206  [locus_tag=Syn7803C99_206] [prote...  255     3e-87 
+KJ019067.1_prot_AIX23684.1_205  [locus_tag=Syn7803US101_205] [pro...  255     3e-87 
+KJ019068.1_prot_AIX23894.1_209  [locus_tag=Syn7803US102_209] [pro...  255     3e-87 
+KJ019076.1_prot_AIX25643.1_211  [locus_tag=Syn7803US112_211] [pro...  255     3e-87 
+KJ019081.1_prot_AIX26720.1_205  [locus_tag=Syn7803US117_205] [pro...  255     3e-87 
+KJ019084.1_prot_AIX27359.1_208  [locus_tag=Syn7803US123_208] [pro...  255     3e-87 
+KJ019088.1_prot_AIX28343.1_207  [locus_tag=Syn7803US1_207] [prote...  255     3e-87 
+KJ019114.1_prot_AIX35123.1_205  [locus_tag=Syn7803US60_205] [prot...  255     3e-87 
+KJ019122.1_prot_AIX36845.1_209  [locus_tag=Syn7803US79_209] [prot...  255     3e-87 
+KJ019135.1_prot_AIX39725.1_207  [locus_tag=Syn7803C101_207] [prot...  255     3e-87 
+KJ019137.1_prot_AIX40153.1_209  [locus_tag=Syn7803C104_209] [prot...  255     3e-87 
+KJ019138.1_prot_AIX40361.1_207  [locus_tag=Syn7803C107_207] [prot...  255     3e-87 
+KJ019157.1_prot_AIX45342.1_210  [locus_tag=Syn7803C31_210] [prote...  255     3e-87 
+KJ019158.1_prot_AIX45550.1_207  [locus_tag=Syn7803C33_207] [prote...  255     3e-87 
+KJ019163.1_prot_AIX46698.1_206  [locus_tag=Syn7803C38_206] [prote...  255     3e-87 
+KJ019116.1_prot_AIX35545.1_204  [locus_tag=Syn7803US62_204] [prot...  255     3e-87 
+GU071096.1_prot_ADO97612.1_1  [gene=gp59] [locus_tag=SShM2_001] [...  238     7e-81 
+NC_015281.1_prot_YP_004322667.1_1  [gene=gp59] [locus_tag=SShM2_0...  238     7e-81 
+KJ019108.1_prot_AIX33764.1_214  [locus_tag=Syn7803US53_214] [prot...  229     2e-77 
+KJ019140.1_prot_AIX40796.1_215  [locus_tag=Syn7803C109_215] [prot...  225     1e-75 
+NC_026923.1_prot_YP_009133559.1_216  [locus_tag=AAJ59_gp216] [db_...  224     2e-75 
+KJ019028.1_prot_AIX14829.1_218  [locus_tag=Syn7803C45_218] [prote...  224     2e-75 
+KJ019029.1_prot_AIX15046.1_215  [locus_tag=Syn7803C46_215] [prote...  224     2e-75 
+KJ019031.1_prot_AIX15473.1_215  [locus_tag=Syn7803C48_215] [prote...  224     2e-75 
+KJ019032.1_prot_AIX15694.1_218  [locus_tag=Syn7803C49_218] [prote...  224     2e-75 
+KJ019034.1_prot_AIX16122.1_217  [locus_tag=Syn7803C54_217] [prote...  224     2e-75 
+KJ019036.1_prot_AIX16522.1_215  [locus_tag=Syn7803C57_215] [prote...  224     2e-75 
+KJ019046.1_prot_AIX18802.1_216  [locus_tag=Syn7803C72_216] [prote...  224     2e-75 
+KJ019047.1_prot_AIX19019.1_215  [locus_tag=Syn7803C73_215] [prote...  224     2e-75 
+KJ019048.1_prot_AIX19238.1_216  [locus_tag=Syn7803C75_216] [prote...  224     2e-75 
+KJ019050.1_prot_AIX19673.1_216  [locus_tag=Syn7803C77_216] [prote...  224     2e-75 
+KJ019057.1_prot_AIX21322.1_217  [locus_tag=Syn7803C89_217] [prote...  224     2e-75 
+KJ019062.1_prot_AIX22551.1_217  [locus_tag=Syn7803C93_217] [prote...  224     2e-75 
+KJ019070.1_prot_AIX24342.1_217  [locus_tag=Syn7803US104_217] [pro...  224     2e-75 
+KJ019072.1_prot_AIX24776.1_216  [locus_tag=Syn7803US108_216] [pro...  224     2e-75 
+KJ019073.1_prot_AIX24994.1_216  [locus_tag=Syn7803US109_216] [pro...  224     2e-75 
+KJ019074.1_prot_AIX25213.1_217  [locus_tag=Syn7803US110_217] [pro...  224     2e-75 
+KJ019075.1_prot_AIX25430.1_215  [locus_tag=Syn7803US111_215] [pro...  224     2e-75 
+KJ019077.1_prot_AIX25860.1_216  [locus_tag=Syn7803US113_216] [pro...  224     2e-75 
+KJ019078.1_prot_AIX26078.1_216  [locus_tag=Syn7803US114_216] [pro...  224     2e-75 
