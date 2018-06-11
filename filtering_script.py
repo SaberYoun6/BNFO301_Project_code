@@ -10,6 +10,7 @@ seq=[]
 inp=sys.argv[1]
 query=[]
 seq_val={}
+new_tuple=()
 with open(inp, 'r') as data:
     for inc in data:
         line= inc.rstrip('\n')
@@ -33,7 +34,7 @@ with open(inp, 'r') as data:
             seq_id.append(line)
         elif (D_or_HQ):
             seq_id.append(D_or_HQ.group())
-        newline= re.search('0.0[0-4][0-9]*',line)
+        newline= re.match('0.0[0-4][0-9]*',line)
         neoin = re.search('[0-9]e-[0-9][0-9]*',line)
         if neoin:
             neoin=float(neoin.group())
@@ -47,7 +48,17 @@ with open(inp, 'r') as data:
 
 
 
-print(query)
-print((str(seq_id) + ':' + str(e_val)))
+for i in query:
+    for inc in range(0,len(seq_id)):
+        for incr in range(0,len(e_val)):
+            if i in seq_val:
+                seq_val[i]=[seq_id[0],e_val[0]]
+            else:
+                seq_val[i] =[seq_id[inc],e_val[incr]]
+
+                print(i + '\n' + str(inc) +  str(seq_id[inc]) + ' : ' + str(e_val[incr]) + '\n'  )
+
+
+pprint.pprint(seq_val)
 
 
