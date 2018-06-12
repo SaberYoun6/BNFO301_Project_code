@@ -2,7 +2,6 @@
 import re
 from scipy import stats
 import sys
-import pprint
 seq_id = []
 e_val = []
 protein_search=[]
@@ -15,7 +14,7 @@ with open(inp, 'r') as data:
     for inc in data:
         line= inc.rstrip('\n')
         line= line.lstrip()
-        if line.startswith('Query= lcl'):
+        if line.startswith('Query='):
             query.append(line)
         GU0 = re.match('GU071[0-9]*.1_prot_ADO9[0-9][0-9]*.1.1',line)
         KJ_or_Y= re.match('K[A-Z]0190[0-9]*.1_prot_A[A-Z][A-X][0-9*.1_[1-4]*',line)
@@ -51,14 +50,11 @@ with open(inp, 'r') as data:
 for i in query:
     for inc in range(0,len(seq_id)):
         for incr in range(0,len(e_val)):
-            if i in seq_val:
-                seq_val[i]=[seq_id[0],e_val[0]]
-            else:
-                seq_val[i] =[seq_id[inc],e_val[incr]]
+            if (i in seq_val) and not(sed_val[i] in sed_id[inc]):
+                seq_val[i]=[seq_id[inc],e_val[incr]]
+                print(seq_val[i])
 
                 print(i + '\n' + str(inc) +  str(seq_id[inc]) + ' : ' + str(e_val[incr]) + '\n'  )
 
-
-pprint.pprint(seq_val)
 
 
