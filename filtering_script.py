@@ -60,7 +60,7 @@ for i in query:
                 #print(seq_val[i])
             elif seq_id not  in  new_list or seq_id not in i:
                 new_list.append((inc,e_val[incr]))
-               seq_val[i]= set(new_list)
+                seq_val[i]= frozenset(new_list)
                 #print( seq_val[i])
 #            else:
                 #print(seq_val + seq_val[i])
