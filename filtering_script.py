@@ -51,11 +51,11 @@ with open(inp, 'r') as data:
 
 
 for i in query:
-    for inc in range(0,len(seq_id)):
+    for inc in seq_id):
         for incr in range(0,len(e_val)):
-            if (i is query and seq_val[i] not in sed_id and seq_id not in new_list ):
+            if (seq_val[i] not in inc and inc not in new_list ):
                 new_list.append((seq_id[inc],e_val[incr]))
-                seq_val[i]=new_list
+                seq_val[i]=set(new_list)
                 print(seq_val[i])
             elif seq_id not  in  new_list or seq_id not in query:
                 new_list.append((seq_id[inc],e_val[incr]))
