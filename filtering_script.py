@@ -3,6 +3,7 @@ import re
 from scipy import stats
 import sys
 import multiprocessing as mp
+import time
 ###gobal variables
 seq_id = []
 e_val = []
@@ -11,6 +12,7 @@ seq=[]
 inp=sys.argv[1]
 query=[]
 seq_val={}
+opt=sys.argv[2]
 new_list=[]
 ### 
 with open(inp, 'r') as data:
@@ -47,27 +49,24 @@ with open(inp, 'r') as data:
             e_val.append(newline)
         else: 
             seq.append(line)
+for queries in query:
+    for sequence_id in seq_id:
+        for e_values in range(0,len(e_val)):
+            if sequence_id not in new_list:
+                new_list.append((sequence_id,e_val[e_values]))
+                seq_val[queries] = frozenset(new_list)
+            #print("seq_val = %s : seq_val[queries] = %s " % (seq_val,str(seq_val[queries])))
 
-
-
-
-for i in query:
-    for inc in seq_id:
-        for incr in range(0,len(e_val)):
-            if (i not in inc and inc not in new_list):
-                new_list.append((inc,e_val[incr]))
-                seq_val[i]=frozenset(new_list)
-                #print(seq_val[i])
-            elif seq_id not  in  new_list or seq_id not in i:
-                new_list.append((inc,e_val[incr]))
-                seq_val[i]= frozenset(new_list)
-                #print( seq_val[i])
-#            else:
-                #print(seq_val + seq_val[i])
+#            else:)
 
                 #print(i + '\n' + str(inc) +  str(seq_id[inc]) + ' : ' + str(e_val[incr]) + '\n'  )
 
-for key, increment in seq_val.items():
-    print('query : '+ key)
-    print('hugemouns list : ' + str(increment))
 
+f =open[(opt,"w+")
+for key,increment in seq_val.items():
+    print('query :  %s' % key)
+    print('hugemouns list : %s ' % str(increment))
+#    f.write("queries  %s : %s \n" % (key, str(increment))
+
+#if __name__ == '__main__':
+#    continue
