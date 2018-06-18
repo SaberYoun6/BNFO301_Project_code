@@ -13,6 +13,7 @@ inp=sys.argv[1]
 query=[]
 seq_val={}
 opt=sys.argv[2]
+output=open(opt,'w+')
 new_list=[]
 ### 
 with open(inp, 'r') as data:
@@ -49,12 +50,18 @@ with open(inp, 'r') as data:
             e_val.append(newline)
         else: 
             seq.append(line)
-for queries in query:
-    for sequence_id in seq_id:
-        for e_values in range(0,len(e_val)):
-            if sequence_id not in new_list:
-                new_list.append((sequence_id,e_val[e_values]))
-                seq_val[queries] = frozenset(new_list)
+        output.write(" %s :  seq_id %s, e value : %s \n " % ( query ,seq_id, e_val))
+
+output.close()
+#for key, value in seq_val.items():
+#    output.write("%s \n #s " %( key,value))
+#output.close()
+#for queries in query:
+#    for sequence_id in seq_id:
+#        for e_values in range(0,len(e_val)):
+#            if sequence_id not in new_list:
+#                new_list.append((sequence_id,e_val[e_values]))
+#                seq_val[queries] = frozenset(new_list)
             #print("seq_val = %s : seq_val[queries] = %s " % (seq_val,str(seq_val[queries])))
 
 #            else:)
@@ -62,11 +69,11 @@ for queries in query:
                 #print(i + '\n' + str(inc) +  str(seq_id[inc]) + ' : ' + str(e_val[incr]) + '\n'  )
 
 
-f =open[(opt,"w+")
-for key,increment in seq_val.items():
-    print('query :  %s' % key)
-    print('hugemouns list : %s ' % str(increment))
+#f =open[(opt,"w+")
+#for key,increment in seq_val.items():
+#    print('query :  %s' % key)
+#    print('hugemouns list : %s ' % str(increment))
 #    f.write("queries  %s : %s \n" % (key, str(increment))
-
+#f.close()
 #if __name__ == '__main__':
 #    continue
