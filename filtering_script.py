@@ -11,7 +11,6 @@ seq=[]
 query=[]
 inp=sys.argv[1]
 opt=sys.argv[2]
-new_list=[]
 output=open(opt,'w+')
 #tup=()
 #sequ_id=0
@@ -24,11 +23,14 @@ output=open(opt,'w+')
 #        query.append(querier.group())
 #    q.put(query)
 def main():
-    new_query=''
-    new_seq_id=''
-    tup=()
-    e_val = []
-    seq_val={}
+    new_query = ''
+    new_seq_id= ''
+    tub       = ()
+    tup       = ()
+    new_list  = []
+    e_value   = []
+    e_val     = []
+    seq_val   = {}
     with open(inp, 'r') as data:
        for inc in data:
            line= inc.rstrip('\n')
@@ -37,7 +39,7 @@ def main():
            if querier:
                new_query=querier.group()
                query.append(querier.group())
-           all_seq_id= re.search('^[K,N,D,J,H,G,M,A,F,L][A-Z].*?_prot_.*?\d+',line)
+           all_seq_id= re.search('^[K,N,D,J,H,G,M,A,F,L].*_prot_.*?\d+',line)
            if all_seq_id:
                new_seq_id=all_seq_id.group()
                seq_id.append(all_seq_id.group())
@@ -49,12 +51,14 @@ def main():
                tup=(new_seq_id,new_eval)
            elif e_val0:
                neo_eval=float(e_val0.group())
-               e_val.append(neo_eval)
+               e_value.append(neo_eval)
                tub = (new_seq_id,neo_eval)
-               #print(tup)
-               seq_val[new_query]=tup
-               #print(seq_val[new_query]) 
-               output.write(printing_results(seq_val))
+               #print (tup)
+               #print (tub)
+               seq_val[new_query]= tup
+               #print("%\n s : %s \n" % (new_query, seq_val[new_query]))
+               output.write("\n %s : %s \n" % (new_query,seq_val[new_query]))
+               #output.write((seq_val[new_query])) 
 
 
 def add_seq_id(self,q,data):
