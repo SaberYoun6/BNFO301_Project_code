@@ -6,82 +6,79 @@ import multiprocessing as mp
 import time
 ###gobal variables
 seq_id = []
-e_val = []
 protein_search=[]
 seq=[]
-inp=sys.argv[1]
 query=[]
-seq_val={}
-#opt=sys.argv[2]
-#output=open(opt,'w+')
+inp=sys.argv[1]
+opt=sys.argv[2]
 new_list=[]
-tup=()
+output=open(opt,'w+')
+#tup=()
+#sequ_id=0
+#e_value=0
 ###
-start=time.time()
-with open(inp, 'r') as data:
+#def query_exacator(q,line):
+#    query=[]
+#    querier= re.match("^Query=.*prot.+?[\s|_][0-9]*",line) 
+#    if querier:
+#        query.append(querier.group())
+#    q.put(query)
+def main():
+    new_query=''
+    new_seq_id=''
+    tup=()
+    e_val = []
+    seq_val={}
+    with open(inp, 'r') as data:
+       for inc in data:
+           line= inc.rstrip('\n')
+           line= line.lstrip()
+           querier= re.match("^Query=.*prot.+?[\s|_][0-9]*",line) 
+           if querier:
+               new_query=querier.group()
+               query.append(querier.group())
+           all_seq_id= re.search('^[K,N,D,J,H,G,M,A,F,L][A-Z].*?_prot_.*?\d+',line)
+           if all_seq_id:
+               new_seq_id=all_seq_id.group()
+               seq_id.append(all_seq_id.group())
+           e_val0= re.match('0.0*',line)
+           e_valgt10 =  re.search('[0-9]e-[1-9]+[0-9]*',line)
+           if e_valgt10:
+               new_eval=float(e_valgt10.group())
+               e_val.append(new_eval)
+               tup=(new_seq_id,new_eval)
+           elif e_val0:
+               neo_eval=float(e_val0.group())
+               e_val.append(neo_eval)
+               tub = (new_seq_id,neo_eval)
+               #print(tup)
+               seq_val[new_query]=tup
+               #print(seq_val[new_query]) 
+               output.write(printing_results(seq_val))
+
+
+def add_seq_id(self,q,data):
     for inc in data:
         line= inc.rstrip('\n')
         line= line.lstrip()
-        querier= re.match("^Query=.*prot.+?[\s|_][0-9]*",line) 
-        if querier:
-            query.append(querier)
-            end4=time.time()
-#       if line.startswith('Query= '):
-#            query.append(line)
-#            end5=time.time()
-        GU0 =    re.search('^GU.+*prot_ADO9[0-9][0-9]*.1.1',line)
-        KJ_or_Y= re.search('^K[A-Z]0190[0-9]*.1_prot_A[A-Z][A-X][0-9*.1_[1-4]*',line)
-        NC_0=    re.search("^NC_0[0-4][0-9]*.1_prot_YP_[0-9]*.1_[0-9]*",line)
-        J_N_or_F=re.search('^J[B-P][0-9]7[0-9][0-9]*.1_prot_AF[A-F[0-9]*.1_[0-4]*',line)
-        D_or_HQ= re.search("^[D,H]Q.*prot_A.+[0-9]*",line)
-        MH=      re.search("^MH.*.prot.+?"
-                ,line)
-        if GU0:
-            seq_id.append(GU0.group())  
-        elif (KJ_or_Y):
-            seq_id.append(KJ_or_Y.group())
-        elif (NC_0):
-            seq_id.append(NC_0.group())
-        elif (J_N_or_F):
-            seq_id.append(J_N_or_F.group())
-        elif (MH):
-            seq_id.append(MH)
-        elif (D_or_HQ):
-            seq_id.append(D_or_HQ.group())
-        newline= re.match('0.0*',line)
-        neoin =  re.search('[0-9]e-[1-9]+[0-9]*',line)
-        if neoin:
-            neoin=float(neoin.group())
-            e_val.append(neoin)
-        elif newline:
-            newline=float(newline.group())
-            e_val.append(newline)
-        else: 
-            seq.append(line)
-end=time.time()
-start1=time.time()
-for sequnce_id in seq_id:
-    for e_value in range(0,len(e_val):
-            tup=(sequence_id,e_val[e_value])
-            if tup not in new_list:
-               new_list.append(tup)
-               new_list=frozenset(new_list)
+        all_seq_id=re.search('^[K,N,D,J,H,G,M,A,F,L][A-Z].*?prot.*?_.*?\d+',line)
+        if all_seq_id:
+            seq_id.append(all_seq_id.group())
+    return seq_id
 
-for queries in query:
-    for new_item in new_list:
-    if seq_val not in  query and seq_val[query] not in new_item:
-        seq_val[queries] = new_item
-        print(seq_val[queries])
-end2=time.time()
+def creating_tups(s,e):
+    tups=()
+    for increment  in range(0,len(s)):
+        for incrementator in range(0,len(e)):
+            tups=(s[incremnt],e[incrementator])
+    return tups
+def printing_results(s_v):
+    for key,value in s_v.items():
+        return ("%s : %s " % (key, value))
 
-for key,value in seq_val:
-    print("key: %s" % key)
-    print("value: %s" % value)
+main()
 
-
-
-
-
+output.close()
 #for new_queries in new_query:
 #    newest_list.append(new_queries)
 #    end3=time.time()
@@ -95,7 +92,6 @@ for key,value in seq_val:
 #print("%f" % (end0))
 #print("%f" % (finish))
 #print("%f" % (finish_time))
-#output.close()
 #for sequence_id in seq_idd:
 #for key, value in seq_val.items():
 #    output.write("%ds \n #ds " %( key,value))
@@ -110,6 +106,7 @@ for key,value in seq_val:
 
 #            else:)
 
+                
                 #print(i + '\n' + str(inc) +  str(seq_id[inc]) + ' : ' + str(e_val[incr]) + '\n'  )
 
 
@@ -121,3 +118,10 @@ for key,value in seq_val:
 #f.close()
 #if __name__ == '__main__':
 #    continue
+ #          if __name__ == '__main__':
+ #              ctx=mp.get_context('spawn')
+ #              q=ctx.Queue()
+ #              p=ctx.Process(target=query_exacator(q,line))
+ #              p.start()
+ #              print(q.get())
+ #              p.join()
