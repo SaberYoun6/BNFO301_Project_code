@@ -104,6 +104,6 @@ venv.bak/
 .mypy_cache/
 
 # my own stuff
-.fasta.txt
-.swp.py
+*.fasta.txt
+*.swp.py
 
