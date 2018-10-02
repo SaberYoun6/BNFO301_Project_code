@@ -79,7 +79,7 @@ def main():
        #print(len(seq_record.seq))
        totalcount1+=1
        if   len(seq_record.seq) == 50:
-         c1+=1 # to keep count of  every instance that is begin called 
+          c1+=1 # to keep count of  every instance that is begin called 
   #       print(str(seq_record.id))
   #       print(str(seq_record.seq))
   #       print(len(seq_record.seq)) 
@@ -89,7 +89,7 @@ def main():
 #         print(str(seq_record.seq))
  #        print(len(seq_record.seq))
        elif len(seq_record.seq) == 52:
-         cou1=+1 # to keep count of  every instance that is begin called 
+#         cou1=+1 # to keep count of  every instance that is begin called 
          seq_rec52_phen.append(str(seq_record.seq))
        elif len(seq_record.seq) == 53:
 #        print(str(seq_record.id))
@@ -102,17 +102,17 @@ def main():
 #        print(str(seq_record.seq))
 #        print(len(seq_record.seq))
        elif len(seq_record.seq) == 55:
-         cuon1+=1 # to keep count of  every instance that is begin called 
+#         cuon1+=1 # to keep count of  every instance that is begin called 
          seq_rec55_phen.append(str(seq_record.seq))
        elif len(seq_record.seq) == 56:
-         count1+=1 # to keep count of  every instance that is begin called 
+#         count1+=1 # to keep count of  every instance that is begin called 
          seq_rec56_phen.append(str(seq_record.seq))
        elif len(seq_record.seq) == 57:
-         counts1+=1 # to keep count of  every instance that is begin called 
+#         counts1+=1 # to keep count of  every instance that is begin called 
          seq_rec57_phen.append(str(seq_record.seq))
        elif len(seq_record.seq) == 58:
 #        print(str(seq_record.id))
-         countes1+=1  # to keep count of  every instance that is begin called 
+        countes1+=1  # to keep count of  every instance that is begin called 
 #        print(str(seq_record.seq))
 #        print(len(seq_record.seq))
        elif len(seq_record.seq) == 59:
@@ -122,22 +122,20 @@ def main():
 #        print(len(seq_record.seq))
        else:
          conuts1+=1 # to keep count of  every instance that is begin called 
-#        print(str(seq_record.id))
-#        print(str(seq_record.seq))
+#         print(str(seq_record.id))
+#         print(str(seq_record.seq))
+  con_seq_52_phen=cons_seq(seq_rec52_phen)
+  print(con_seq_52_phen)
 
+'''
   sumofcounts1 = c1+co1+cou1+cuo1+coun1+count1+countes1+cunots1+conuts1
   sumofcount   = c+co+cou+cuo+coun+cuon+count+counts+countes+cunots+conuts
   diffofcounts= totalcount-sumofcount
   diffofcounts1=totalcount1-sumofcounts1
 
-  con_seq_52_pen=cons_seq(seq_rec52_phen)
-  print(con_seq_52_pen)
-
-
-
   print ("50 : %i\n51 : %i\n52 : %i\n53 : %i\n54 : %i\n55 : %i\n56 : %i\n57 : %i\n58 : %i\n59 : %i\n60 : %i\n total count : %i sum of all counts : %i differenct of total counts - sum of all counts : %i" %(c1,co1,cou1,cuo1,coun1,cuon1,count1,counts1,countes1,cunots1,conuts1,totalcount1,sumofcounts1,diffofcounts1))
   print ("50 : %i\n51 : %i\n52 : %i\n53 : %i\n54 : %i\n55 : %i\n56 : %i\n57 : %i\n58 : %i\n59 : %i\n60 : %i\n total count : %i sum of all counts : %i differenct of total counts - sum of all counts : %i" %(c,co,cou,cuo,coun,cuon,count,counts,countes,cunots,conuts, totalcount,sumofcount,diffofcounts))
-'''
+
   for k in secondmode:
     for v in secondmode[k]:
       print('%s: %s'%(k,v) )
